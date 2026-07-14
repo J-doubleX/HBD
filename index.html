@@ -8,23 +8,23 @@
 </head>
 <body>
 
-    <!-- Background Audio File Element -->
+    
     <audio id="bg-music" loop>
         <source src="resources/happy-birthday.m4a" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-    <!-- STEP 1: The Initial Tap Cover Screen -->
+    
     <div id="gift-screen">
-        <!-- Replace 'gift.png' with your actual image or gif asset file -->
+        
         <img src="images/gift.gif" alt="Gift Box" class="gift-box-img" id="gift-button">
         <p class="instruction-text">Tap the box to open your birthday surprise... ✨</p>
     </div>
 
-    <!-- STEP 2: The Continuous Scrolling Paper Stack -->
+    
     <div id="content-screen">
 
-        <!-- Card Page 1 -->
+        
         <div class="paper-page">
             <div class="media-placeholder"><img src="images/my-baby.png" alt=""></div>
             <h2>Happy Birthday my little babyy!</h2>
@@ -32,7 +32,7 @@
             <p>ကိုကိုတို့အခုအနီးအနားမှာမရှိနိုင်ဘဲ ဝေးကွာနေကြပေမဲ့၊ ကိုကို့နှလုံးသားထဲမှာတော့ ဘေဘီအမြဲရှိနေတာပါ။ ဒီနှလုံးသားရဲ့အတွင်းထဲမှာ ဘေဘီနေရာယူထားတာပါ။</p>
         </div>
 
-        <!-- Card Page 2 -->
+        
         <div class="paper-page">
             <div class="media-placeholder"><img src="images/roses.jpg" alt=""></div>
             <h2>Here's some roses for youu &lt;3</h2>
@@ -40,7 +40,7 @@
             <p>ကလေးလေးနဲ့အတူရှိတဲ့နေ့တိုင်းကလည်း ကိုကို့အတွက်လက်ဆောင်တစ်ခုပဲမလို့ တစ်သက်လုံးဘေဘီ့အနားမှာရှိသွားချင်တယ်။ ဘေဘီ့ဘေးနားမှာအတူတူရှိပြီး အမှတ်တရတွေအများကြီးအတူတူထပ်ရှိချင်သေးတယ်ကလေးလေး။</p>
         </div>
 
-        <!-- Card Page 3 -->
+        
         <div class="paper-page">
             <div class="media-placeholder"><img src="images/cake.jpg" alt=""></div>
             <h2>Make your wishes here</h2>
@@ -58,7 +58,11 @@
 
     <div id="surprise-screen" class="hidden">
         <div class="paper-page-1">
-            <div class="media-placeholder"><video preload="auto" id="Svideo" src="resources/surprise.mp4" width="100%" height="100%"></video></div>
+            <div class="media-placeholder">
+                <audio id="sAudio" controls preload="auto">
+                    <source src="resources/wishes.mp3" type="audio/mpeg">
+                </audio>
+            </div>
             <h2>I love you baby!</h2>
             <p>လူတစ်ယောက်ကိုဒီလိုမျိုးလေးလုပ်ပေးဖူးတာက ပထမအကြိမ်လည်းဖြစ်တာမလို့ အမှားတွေပါသွားရင်လည်းမမြင်ချင်ယောင်ဆောင်လိုက်ပါနော်။ <br> မွေးနေ့ကနေစပြီးအိုမင်းသွားတဲ့အထိဘေဘီ့အနားမှာပဲအမြဲရှိသွားမယ်။ ဘေဘီလည်းကိုယ်၏ကျန်းမာခြင်း၊ စိတ်၏ချမ်းသာခြင်းတွေနဲ့ပြည့်စုံပြီး လိုအင်ဆန္ဒပြည့်ဝပါစေနော်ဘေဘီ</p>
         </div>

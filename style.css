@@ -1,11 +1,11 @@
-/* CSS Reset & Variable Setup */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 :root {
-    --bg-color: #ffffff; /* Soft cream wallpaper background */
+    --bg-color: #ffffff; 
     --paper-color: #ffffff;
     --text-color: #4a3e3d;
     --accent-color: #d4a373;
@@ -19,7 +19,7 @@ body {
     height: 100vh;
 }
 
-/* Screen 1: The Closed Gift Box */
+
 #gift-screen {
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ body {
     transition: opacity 0.8s ease-in-out, visibility 0.8s;
 }
 
-/* Tailored precisely to fit her 20:9 screen above the fold */
+
 .gift-box-img {
     width: 240px;
     height: 240px;
@@ -65,7 +65,7 @@ body {
     100% { transform: scale(1); }
 }
 
-/* Screen 2: The Scrollable Paper Content */
+
 #content-screen {
     opacity: 0;
     visibility: hidden;
@@ -95,7 +95,7 @@ body {
     display: none !important;
 }
 
-/* Paper stacked card look optimized for her 720px width view */
+
 .paper-page {
     background: var(--paper-color);
     width: 100%;
@@ -126,7 +126,7 @@ body {
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
 }
 
-/* Classes triggered by JS for fluid entry on her 90Hz screen */
+
 .show-screen {
     opacity: 1 !important;
     visibility: visible !important;
@@ -151,7 +151,8 @@ body {
 }
 
 #surprise-screen .media-placeholder {
-    height: 50%;
+    width: 50%;
+    height: 20%;
 }
 
 .media-placeholder img {
@@ -178,4 +179,8 @@ p {
 
 .surprise:hover {
     cursor: pointer;
+}
+
+#sAudio {
+    width: 100%;
 }
